@@ -1,13 +1,8 @@
-The proposal should be about one page long and describe what you want your project to do and
-what libraries or resources you have identified to use for this project. You should provide links to
-outside resources you are planing on using in the project.
-
 # Animate Me
 * **Description of Project**:
-    Similar to a SnapChat filter. The program will use facial recognition to identify the user's
-    face and overlay an animation over the face of the user. The user is then able to control this
-    animation by moving their own face. The facial expressions of the animation should follow that
-    of the users. Similarly, the position of the animation on the screen will follow that of the
+    * Similar to a SnapChat filter. 
+    * The program will use facial recognition to identify the user's face and overlay an animation over the face of the user. 
+    * The user is then able to control this animation by moving their own face. The facial expressions of the animation should follow that of the users. Similarly, the position of the animation on the screen will follow that of the
     user as long as they are within the view of the camera.
 * **Libraries and Add-Ons Used**
     * [ofxFaceTracker](https://github.com/kylemcdonald/ofxFaceTracker):
@@ -21,12 +16,12 @@ outside resources you are planing on using in the project.
 
 # Other Potential Projects
 * Text to speech for French
-    * Allows users to input text
-    * Using pre-recorded files and phonetic rules, a french pronunciation of the text will be generated
+    * Allows users to input text.
+    * Using pre-recorded files and phonetic rules, a french pronunciation of the text will be generated.
 * Fashion clothing silhouette simulator
-    * Allows user to design an outfit on a given mannequin
-    * Simulates the silhouette of the outfit on the mannequin when placed in a wind tunnel
+    * Allows user to design an outfit on a given mannequin.
+    * Simulates the silhouette of the outfit on the mannequin when placed in a wind tunnel.
     * Uses the following [add-on](https://github.com/kashimAstro/ofxCloth)
 * Multi player tetris game
-    * Borrows from the classic Tetris game
-    * Allows two players to play Tetris against each other simultaneously
+    * Borrows from the classic Tetris game.
+    * Allows two players to play Tetris against each other simultaneously.
