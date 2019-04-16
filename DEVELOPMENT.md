@@ -14,7 +14,7 @@
     * Macros in of, `OF_MOUSE_BUTTON_LEFT`, `OF_MOUSE_BUTTON_RIGHT`, return an `int` indicating if the mouse button has been clicked.
 * Experimenting with computer vision in openframeworks.
     * Read through open frameworks [walk through](https://openframeworks.cc/ofBook/chapters/image_processing_computer_vision.html).
-* Experimented with [ofxFaceTracker](https://github.com/kylemcdonald/ofxFaceTracker) to project.
+* Experimented with [ofxFaceTracker](https://github.com/kylemcdonald/ofxFaceTracker).
     * The library uses the computer's webcam and openCV to track the users face.
 * [FaceOSC](https://github.com/kylemcdonald/ofxFaceTracker/releases) is a program built ontop of [ofxFaceTracker](https://github.com/kylemcdonald/ofxFaceTracker)
     * Information is sent from the face tracker via OSC [Open Sound Control](https://github.com/openframeworks/ofBook/blob/master/chapters/game_design/chapter.md#so-what-is-osc-anyway)
