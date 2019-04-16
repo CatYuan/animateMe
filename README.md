@@ -1,5 +1,5 @@
 # Final Project
-##Animate Me
+## Animate Me
 #### Description of Project:
 * Similar to a SnapChat filter. 
 * The program will use facial recognition to identify the user's face and overlay an animation over the face of the user. 
