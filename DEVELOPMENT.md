@@ -20,3 +20,5 @@
     * Information is sent from the face tracker via OSC [Open Sound Control](https://github.com/openframeworks/ofBook/blob/master/chapters/game_design/chapter.md#so-what-is-osc-anyway)
 * Added [FaceOSC-Templates](https://github.com/CreativeInquiry/FaceOSC-Templates) to project.
     * Is a program that receives the OSC data produced by [FaceOSC](https://github.com/kylemcdonald/ofxFaceTracker/releases) and parses it into a more understandable format.
+* Experimented with [ofxFacialBlendShape](https://github.com/iwanao731/ofxFacialBlendShape).
+    * The examples in the library fail to build.

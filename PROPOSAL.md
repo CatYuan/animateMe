@@ -8,9 +8,9 @@
     This add-on uses opencv and other libraries to detect the face of the user. It can also track the movement of the facial features of the user. For example, if the user blinks or smiles, the program can detect and identify these changes.
     * [ofxFacialBlendShape](https://github.com/iwanao731/ofxFacialBlendShape): This add-on enables the generation of facial animation using a 3D facial model. The 3D facial model can then be programmed to create different facial expressions and move certain facial features.
 * **Plan**
-    * **Week of 04/09**: Experiment with [ofxFacialBlendShape](https://github.com/iwanao731/ofxFacialBlendShape). Be able to program and animate multiple different facial expressions. Set up a general outline for key functions that will connect to [ofxFaceTracker](https://github.com/kylemcdonald/ofxFaceTracker).
-    * **Week of 04/16**: Experiment with [ofxFaceTracker](https://github.com/kylemcdonald/ofxFaceTracker). Experiment with adding camera functionality into the program. Be able to use [ofxFaceTracker](https://github.com/kylemcdonald/ofxFaceTracker) to recognize a face.
-    * **Week of 04/23**: Integrate the two libraries together into the program.
+    * **Week of 04/09**: Experiment with [ofxFacialBlendShape](https://github.com/iwanao731/ofxFacialBlendShape) and [ofxFaceTracker](https://github.com/kylemcdonald/ofxFaceTracker). Check that libraries are functional. 
+    * **Week of 04/16**: Create an animation for the face using open framework graphics libraries. Start with 2d animations. If time allows, attempt 3d animations.
+    * **Week of 04/23**: Integarte the animation with the facial tracker, allowing the facial tracker to control the animation.
 
 # Other Potential Projects
 * Text to speech for French
