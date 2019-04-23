@@ -73,7 +73,8 @@ bool Face::parseOSC(ofxOscMessage& m) {
 //--------------------------------------------------------------
 string Face::toString() {
 	stringstream stream;
-	stream << "found: " << found << endl
+	stream << "---------" << endl
+		<< "found: " << found << endl
 		<< "pose" << endl
 		<< "  scale: " << poseScale << endl
 		<< "  position: " << posePosition << endl

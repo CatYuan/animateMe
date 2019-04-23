@@ -2,12 +2,32 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+	ofSetVerticalSync(true);
+	ofSetFrameRate(60);
 
+	// FaceOSC sends to port 8338 by default
+	receiver.setup(8338);
+
+	ofBackground(255);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
+	// check for waiting osc messages
+	while (receiver.hasWaitingMessages()) {
 
+		// get the next message
+		ofxOscMessage message;
+		receiver.getNextMessage(message);
+
+		// load face from any FaceOSC messages
+		face.parseOSC(message);
+	}
+
+	// found face?
+	if (face.found > 0) {
+		cout << face.toString();
+	}
 }
 
 //--------------------------------------------------------------
