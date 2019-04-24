@@ -12,11 +12,13 @@ void BasicAnimation::drawAnimation() {
 
 		ofSetColor(0);
 		ofNoFill();
-		ofDrawEllipse(-20, face.eyeLeft * -9, 20, 7);
-		ofDrawEllipse(20, face.eyeRight * -9, 20, 7);
+		ofDrawEllipse(-20, -27, 20, face.eyeLeft * 2);
+		ofDrawEllipse(20, -27, 20, face.eyeRight * 2);
 		ofDrawEllipse(0, 20, face.mouthWidth * 3, face.mouthHeight * 3);
-		ofDrawEllipse(-5, face.nostrils * -1, 7, 3);
-		ofDrawEllipse(5, face.nostrils * -1, 7, 3);
+		ofDrawEllipse(-5, -7, face.nostrils, 3);
+		ofDrawEllipse(5, -7, face.nostrils, 3);
+		ofSetCircleResolution(50);
+		ofDrawEllipse(0, 0, 80, 100);
 
 		ofSetRectMode(OF_RECTMODE_CENTER);
 		ofFill();

@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "ofxOsc.h"
 #include "Face.h"
+#include "Animation.h"
 
 class ofApp : public ofBaseApp{
 
@@ -25,4 +26,5 @@ class ofApp : public ofBaseApp{
 		
 		ofxOscReceiver receiver;
 		Face face;
+		Animation* drawing;
 };

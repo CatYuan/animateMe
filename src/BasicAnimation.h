@@ -4,6 +4,7 @@
 #include "Animation.h"
 #include "Face.h"
 
+//a basic animation of the shape of a face
 class BasicAnimation : public Animation {
 
 public:

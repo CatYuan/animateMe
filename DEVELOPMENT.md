@@ -37,3 +37,7 @@
     * `ofDrawRectangle()` - void ofDrawRectangle(float x1, float y1, float w, float h)
     * `ofDrawTriangle()` - void ofDrawTriangle(float x1, float y1, float x2, float y2, float x3, float y3)
 * Created an `animation` [interface](https://www.tutorialspoint.com/cplusplus/cpp_interfaces.htm) using [pure virtual functions](https://www.tutorialspoint.com/cplusplus/cpp_interfaces.htm).
+    * This allows for multiple different implementations of animations.
+### Goal For Next Week:
+* Add other implementations of animations.
+* Allow for the user to toggle between the different animations by clicking on the screen.

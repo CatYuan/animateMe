@@ -10,7 +10,7 @@
 #include "ofMain.h"
 #include "ofxOscMessage.h"
 
-	// a single tracked face from FaceOSC
+// a single tracked face from FaceOSC
 class Face {
 
 public:
@@ -41,5 +41,3 @@ public:
 	// get the current face values as a string (includes end lines)
 	string toString();
 };
-
-#include "Face.cpp"

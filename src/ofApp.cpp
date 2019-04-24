@@ -1,4 +1,5 @@
 #include "ofApp.h"
+#include "BasicAnimation.h"
 
 //--------------------------------------------------------------
 void ofApp::setup(){
@@ -13,18 +14,13 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-	// check for waiting osc messages
 	while (receiver.hasWaitingMessages()) {
-
-		// get the next message
 		ofxOscMessage message;
 		receiver.getNextMessage(message);
 
 		// load face from any FaceOSC messages
 		face.parseOSC(message);
 	}
-
-	// found face?
 	if (face.found > 0) {
 		cout << face.toString();
 	}
@@ -32,7 +28,9 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+	BasicAnimation basic(face);
+	drawing = &basic;
+	drawing->drawAnimation();
 }
 
 //--------------------------------------------------------------

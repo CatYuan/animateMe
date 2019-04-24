@@ -2,10 +2,10 @@
 
 #include "ofMain.h"
 
+//an interface for the animation
 class Animation {
 
 public:
 
-	virtual ~Animation() = 0;
 	virtual void drawAnimation() = 0;
 };
