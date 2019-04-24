@@ -186,6 +186,7 @@
 	<ItemGroup>
 		<ClCompile Include="src\main.cpp" />
 		<ClCompile Include="src\ofApp.cpp" />
+		<ClCompile Include="src\BasicAnimation.cpp" />
 		<ClCompile Include="src\Face.cpp" />
 		<ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscBundle.cpp" />
 		<ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscMessage.cpp" />
@@ -202,6 +203,8 @@
 	</ItemGroup>
 	<ItemGroup>
 		<ClInclude Include="src\ofApp.h" />
+		<ClInclude Include="src\Animation.h" />
+		<ClInclude Include="src\BasicAnimation.h" />
 		<ClInclude Include="src\Face.h" />
 		<ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOsc.h" />
 		<ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscArg.h" />

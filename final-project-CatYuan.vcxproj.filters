@@ -7,6 +7,9 @@
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
+		<ClCompile Include="src\BasicAnimation.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
 		<ClCompile Include="src\Face.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
@@ -87,6 +90,12 @@
 	</ItemGroup>
 	<ItemGroup>
 		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\Animation.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\BasicAnimation.h">
 			<Filter>src</Filter>
 		</ClInclude>
 		<ClInclude Include="src\Face.h">
