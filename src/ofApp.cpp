@@ -1,5 +1,6 @@
 #include "ofApp.h"
 #include "BasicAnimation.h"
+#include "SouthparkAnimation.h"
 
 //--------------------------------------------------------------
 void ofApp::setup(){
@@ -28,9 +29,15 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-	BasicAnimation basic(face);
-	drawing = &basic;
-	drawing->drawAnimation();
+	if (isSouthparkAnim) {
+		SouthparkAnimation anim(face);
+		drawing = &anim;
+		drawing->drawAnimation();
+	} else {
+		BasicAnimation anim(face);
+		drawing = &anim;
+		drawing->drawAnimation();
+	}
 }
 
 //--------------------------------------------------------------
@@ -55,7 +62,9 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-
+	if (button == OF_MOUSE_BUTTON_LEFT) {
+		isSouthparkAnim = !isSouthparkAnim;
+	}
 }
 
 //--------------------------------------------------------------

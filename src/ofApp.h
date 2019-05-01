@@ -27,4 +27,5 @@ class ofApp : public ofBaseApp{
 		ofxOscReceiver receiver;
 		Face face;
 		Animation* drawing;
+		bool isSouthparkAnim;
 };
