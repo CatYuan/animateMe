@@ -1,6 +1,7 @@
 # Final Project
 ## Animate Me
 #### Description of Project:
+* This is an openFrameworks program.
 * Similar to a SnapChat filter. 
 * The program will use facial recognition to identify the user's face and overlay an animation over the face of the user. 
 * The user is then able to control this animation by moving their own face. The facial expressions of the animation should follow that of the users. Similarly, the position of the animation on the screen will follow that of the user as long as they are within the view of the camera. To cycle through the different animations available, click the left mouse button.
@@ -9,7 +10,7 @@
   * Download [FaceOSC](https://github.com/kylemcdonald/ofxFaceTracker/releases).
   * Clone **AnimateMe** onto the computer.
   * Run the **FaceOSC** program located in the `bin` folder.
-  * Run **AnimateMe** while **FaceOSC** is running.
+  * Run **AnimateMe** using the ProjectGenerator from openFrameworks while **FaceOSC** is running.
 * Using the program:
   * Clicking the left mouse button will shuffle through the available animations.
   * Moving the head, mouth, eyebrows, and nose will affect the animations.
