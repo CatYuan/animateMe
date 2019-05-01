@@ -27,12 +27,16 @@ void SouthparkAnimation::drawFace() {
 
 void SouthparkAnimation::drawEyes() {
 	ofSetColor(WHITE);
-	ofDrawCircle(-EYE_X_OFFSET, -EYE_Y_OFFSET, EYE_WIDTH);
-	ofDrawCircle(EYE_X_OFFSET, -EYE_Y_OFFSET, EYE_WIDTH);
+	ofDrawCircle(-EYE_X_OFFSET, -EYE_Y_OFFSET, 
+		face.eyebrowLeft * EYE_WIDTH_SCALE_FACTOR);
+	ofDrawCircle(EYE_X_OFFSET, -EYE_Y_OFFSET, 
+		face.eyebrowRight * EYE_WIDTH_SCALE_FACTOR);
 
 	ofSetColor(0);
-	ofDrawCircle(-EYE_X_OFFSET, -EYE_Y_OFFSET, PUPIL_WIDTH);
-	ofDrawCircle(EYE_X_OFFSET, -EYE_Y_OFFSET, PUPIL_WIDTH);
+	ofDrawCircle(-EYE_X_OFFSET, -EYE_Y_OFFSET, 
+		face.eyebrowLeft * PUPIL_WIDTH_SCALE_FACTOR);
+	ofDrawCircle(EYE_X_OFFSET, -EYE_Y_OFFSET, 
+		face.eyebrowRight * PUPIL_WIDTH_SCALE_FACTOR);
 }
 
 void SouthparkAnimation::drawMouth() {

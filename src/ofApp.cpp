@@ -1,9 +1,11 @@
 #include "ofApp.h"
 #include "BasicAnimation.h"
 #include "SouthparkAnimation.h"
+#include "KirbyAnimation.h"
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+	numMouseClicks = 0;
 	ofSetVerticalSync(true);
 	ofSetFrameRate(60);
 
@@ -29,8 +31,12 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-	if (isSouthparkAnim) {
+	if (numMouseClicks % numAnimations == southparkCode) {
 		SouthparkAnimation anim(face);
+		drawing = &anim;
+		drawing->drawAnimation();
+	} else if (numMouseClicks % numAnimations == kirbyCode) {
+		KirbyAnimation anim(face);
 		drawing = &anim;
 		drawing->drawAnimation();
 	} else {
@@ -63,7 +69,7 @@ void ofApp::mouseDragged(int x, int y, int button){
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
 	if (button == OF_MOUSE_BUTTON_LEFT) {
-		isSouthparkAnim = !isSouthparkAnim;
+		numMouseClicks++;
 	}
 }
 

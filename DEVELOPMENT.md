@@ -43,6 +43,6 @@
 * Allow for the user to toggle between the different animations by clicking on the screen.
 
 # Week of 4/23
-* Animated Kyle from Southpark.
-* Added interactivity. Clicking the mouse shuffles through the different animations available.
+* Animated Kyle from Southpark and Kirby.
+* Added interactivity. Clicking the left mouse button shuffles through the different animations available.
     * Uses the `mousePressed()` function.

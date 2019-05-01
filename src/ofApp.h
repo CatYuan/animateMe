@@ -8,6 +8,12 @@
 class ofApp : public ofBaseApp{
 
 	public:
+
+		const int numAnimations = 3;
+		const int basicAnimationCode = 0;
+		const int southparkCode = 1;
+		const int kirbyCode = 2;
+
 		void setup();
 		void update();
 		void draw();
@@ -27,5 +33,5 @@ class ofApp : public ofBaseApp{
 		ofxOscReceiver receiver;
 		Face face;
 		Animation* drawing;
-		bool isSouthparkAnim;
+		int numMouseClicks;
 };
