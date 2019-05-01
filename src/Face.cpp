@@ -1,4 +1,4 @@
-//
+// All of the code below was taken from 
 // a template for receiving face tracking osc messages from
 // Kyle McDonald's FaceOSC https://github.com/kylemcdonald/ofxFaceTracker/downloads
 //

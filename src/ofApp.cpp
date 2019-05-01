@@ -7,12 +7,9 @@
 void ofApp::setup(){
 	numMouseClicks = 0;
 	ofSetVerticalSync(true);
-	ofSetFrameRate(60);
-
-	// FaceOSC sends to port 8338 by default
-	receiver.setup(8338);
-
-	ofBackground(255);
+	ofSetFrameRate(FRAME_RATE);
+	receiver.setup(PORT);
+	ofBackground(WHITE);
 }
 
 //--------------------------------------------------------------
@@ -20,8 +17,6 @@ void ofApp::update(){
 	while (receiver.hasWaitingMessages()) {
 		ofxOscMessage message;
 		receiver.getNextMessage(message);
-
-		// load face from any FaceOSC messages
 		face.parseOSC(message);
 	}
 	if (face.found > 0) {
@@ -31,11 +26,11 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-	if (numMouseClicks % numAnimations == southparkCode) {
+	if (numMouseClicks % NUM_ANIMATIONS == SOUTHPARK_CODE) {
 		SouthparkAnimation anim(face);
 		drawing = &anim;
 		drawing->drawAnimation();
-	} else if (numMouseClicks % numAnimations == kirbyCode) {
+	} else if (numMouseClicks % NUM_ANIMATIONS == KIRBY_CODE) {
 		KirbyAnimation anim(face);
 		drawing = &anim;
 		drawing->drawAnimation();

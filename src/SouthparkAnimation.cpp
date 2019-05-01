@@ -9,6 +9,7 @@ void SouthparkAnimation::drawAnimation() {
 		ofPushMatrix();
 		ofTranslate(face.posePosition);
 		ofScale(face.poseScale, face.poseScale);
+
 		ofSetColor(0);
 		ofFill();
 		drawFace();
@@ -22,7 +23,7 @@ void SouthparkAnimation::drawAnimation() {
 void SouthparkAnimation::drawFace() {
 	ofSetColor(PEACH_R, PEACH_G, PEACH_B);
 	ofSetCircleResolution(CIRCLE_SMOOTHING_FACTOR);
-	ofDrawCircle(0, 0, FACE_HEIGHT);
+	ofDrawCircle(0, 0, FACE_RADIUS);
 }
 
 void SouthparkAnimation::drawEyes() {
@@ -48,11 +49,11 @@ void SouthparkAnimation::drawMouth() {
 void SouthparkAnimation::drawHat() {
 	ofSetColor(LIGHT_GREEN_R, LIGHT_GREEN_G, LIGHT_GREEN_B);
 	ofSetRectMode(OF_RECTMODE_CENTER);
-	ofDrawRectRounded(0, -HAT_Y_OFFSET, FACE_HEIGHT + FACE_HEIGHT, 
+	ofDrawRectRounded(0, -HAT_Y_OFFSET, FACE_RADIUS + FACE_RADIUS, 
 		HAT_HEIGHT, HAT_EDGE_RADIUS);
-	ofDrawEllipse(-FACE_HEIGHT, -EYE_Y_OFFSET, EARMUFF_WIDTH, EARMUFF_HEIGHT);
-	ofDrawEllipse(FACE_HEIGHT, -EYE_Y_OFFSET, EARMUFF_WIDTH, EARMUFF_HEIGHT);
+	ofDrawEllipse(-FACE_RADIUS, -EYE_Y_OFFSET, EARMUFF_WIDTH, EARMUFF_HEIGHT);
+	ofDrawEllipse(FACE_RADIUS, -EYE_Y_OFFSET, EARMUFF_WIDTH, EARMUFF_HEIGHT);
 	ofSetColor(DARK_GREEN_R, DARK_GREEN_G, DARK_GREEN_B);
 	ofDrawRectangle(0, -VISOR_Y_OFFSET,
-		FACE_HEIGHT + FACE_HEIGHT - VISOR_SCALE_FACTOR, VISOR_HEIGHT);
+		FACE_RADIUS + FACE_RADIUS - VISOR_SCALE_FACTOR, VISOR_HEIGHT);
 }

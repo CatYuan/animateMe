@@ -2,10 +2,11 @@
 
 #include "ofMain.h"
 
-//an interface for the animation
+//An interface for the animation.
 class Animation {
 
 public:
 
+	/*Draws the animation onto the screen.*/
 	virtual void drawAnimation() = 0;
 };
