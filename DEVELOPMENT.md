@@ -46,3 +46,4 @@
 * Animated Kyle from Southpark and Kirby.
 * Added interactivity. Clicking the left mouse button shuffles through the different animations available.
     * Uses the `mousePressed()` function.
+* Testing: No test were written for this program because all of the functionality of the program is represented in the GUI. There is no logic other than what is represented by the `draw` function. The only way to test the logic in the program is to run the program and view the GUI. 
